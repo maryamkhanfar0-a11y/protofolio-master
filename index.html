@@ -756,16 +756,16 @@
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Films</button>
+              <button data-filter-btn>Infographic and Photography</button>
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Posters</button>
+              <button data-filter-btn>Reporting and Field Journalism</button>
             </li>
 
-            <li class="filter-item">
+            <!-- <li class="filter-item">
               <button data-filter-btn>Photography</button>
-            </li>
+            </li> -->
 
           </ul>
 
@@ -805,7 +805,7 @@
 
           <ul class="project-list">
 
-            <li class="project-item active" data-filter-item data-category="Posters">
+            <li class="project-item active" data-filter-item data-category="Films">
               <figure class="project-img">
                 <!-- Remove/disable the overlay so the iframe is clickable -->
                 <!-- <div class="project-item-icon-box">
@@ -813,13 +813,22 @@
                 </div> -->
             
                 <!-- Embedded Google Drive Video -->
-                <iframe src="https://drive.google.com/file/d/17-T4bihRk2WBGDBfOeWp1lheEfQ2OHzx/preview"
-                        width="100%" height="240" allow="autoplay" allowfullscreen
-                        style="border:none; border-radius:10px; display:block;"></iframe>
-              </figure>
+                <div class="video-wrapper" style="position:relative; max-width:720px; margin:auto;">
+                  <img src="./assets/images/poster.jpg" alt="Video Thumbnail"
+                       style="width:100%; border-radius:10px; cursor:pointer;"
+                       onclick="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                
+                  <!-- Play Icon Overlay -->
+                  <div class="play-overlay" onclick="this.previousElementSibling.click();">
+                    ▶
+                  </div>
+                
+                  https://drive.google.com/file/d/17-T4bihRk2WBGDBfOeWp1lheEfQ2OHzx/preview
+                </div>
+                
             
               <h3 class="project-title">The Shadow Of The Nakba: Documentary Film</h3>
-              <p class="project-category">Films</p>
+              <p class="project-category">Films, </p>
             </li>
             
             
