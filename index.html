@@ -813,18 +813,14 @@
                 </div> -->
             
                 <!-- Embedded Google Drive Video -->
-                <div class="video-wrapper" style="position:relative; max-width:720px; margin:auto;">
-                  <img src="./assets/images/poster.jpg" alt="Video Thumbnail"
-                       style="width:100%; border-radius:10px; cursor:pointer;"
-                       onclick="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <div class="video-wrapper">
+                  <img src="./assets/images/poster.jpg" alt="Video Thumbnail" class="video-thumb"
+                       onclick="this.style.display='none'; this.nextElementSibling.style.display='block'; this.nextElementSibling.nextElementSibling.style.display='none';">
                 
-                  <!-- Play Icon Overlay -->
-                  <div class="play-overlay" onclick="this.previousElementSibling.click();">
-                    ▶
-                  </div>
+                  <div class="play-overlay" onclick="this.previousElementSibling.click();">▶</div>
                 
-                 
-                </div>
+                  <iframe src="https://drive.google.com/file/d/17-T4bihRk2WBGDBfOeWp1lheEfQ2OHzx/preview"
+                          style="display:none;" allow="autoplay; fullscreen" allowfullscreen></iframe>
                 
             
               <h3 class="project-title">The Shadow Of The Nakba: Documentary Film</h3>
@@ -832,25 +828,20 @@
             </li>
             
             
-            
+          
+<li class="project-item active" data-filter-item data-category="Posters">
+  <figure class="project-img">
+    <div class="video-embed">
+      <iframe src="https://drive.google.com/file/d/1gFliQ9YqucEIa3UUi7lnYkyMbpN926rV/preview" width="640" height="480" allow="autoplay"></iframe>
+    </div>
+  </figure>
 
-            <li class="project-item  active" data-filter-item data-category="Films">
-              <a href="#">
+  <h3 class="project-title">Al Bareeq Co. Report</h3>
+  <p class="project-category">Reporting</p>
+</li>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
 
-                  <img src="https://drive.google.com/file/d/17-T4bihRk2WBGDBfOeWp1lheEfQ2OHzx/view" alt="orizon" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Bateekh</h3>
-
-                <p class="project-category">Films</p>
-
-              </a>
-            </li>
+      
 
             <li class="project-item  active" data-filter-item data-category="Posters">
               <a href="#">
