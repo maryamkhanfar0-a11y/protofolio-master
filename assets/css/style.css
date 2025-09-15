@@ -1880,3 +1880,28 @@ textarea.form-input::-webkit-resizer { display: none; }
   .timeline-text { max-width: 700px; }
 
 }
+
+/* === Embed video fix: let clicks reach the iframe === */
+
+/* 1) Don't let the thumbnail overlay intercept clicks */
+.project-img::before {
+  pointer-events: none;
+}
+
+/* 2) If the icon overlay is used, don't let it block clicks either */
+.project-item-icon-box {
+  pointer-events: none;
+}
+
+/* 3) Make the iframe fill the figure height where it's fixed to 200px on small screens,
+      and inherit the rounded corners */
+.project-img iframe {
+  display: block;
+  width: 100%;
+  height: 100%;           /* avoids the 240px vs 200px clipping on <450px */
+  border: 0;
+  border-radius: 16px;    /* matches .project-img radius */
+}
+
+/* 4) On wider screens you already set .project-img { height: auto; } at 450px+,
+      so the iframe will naturally size to its intrinsic height or aspect ratio. */
